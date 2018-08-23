@@ -1,8 +1,6 @@
 package com.tuckermillerdev.webapi.archive;
 
 import com.tuckermillerdev.webapi.player.Player;
-
-import com.tuckermillerdev.webapi.player.PlayerRepositoy;
 import com.tuckermillerdev.webapi.player.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

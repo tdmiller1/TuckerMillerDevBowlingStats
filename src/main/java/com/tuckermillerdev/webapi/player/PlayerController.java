@@ -3,7 +3,6 @@ package com.tuckermillerdev.webapi.player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 
 import java.util.List;
 

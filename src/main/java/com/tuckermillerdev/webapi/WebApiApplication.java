@@ -20,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
-public class WebApiApplication implements CommandLineRunner {
+public class WebapiApplication implements CommandLineRunner {
 
     @Autowired
     PlayerRepositoy playerRepositoy;
@@ -28,9 +28,9 @@ public class WebApiApplication implements CommandLineRunner {
     @Autowired
     ArchiveRepository archiveRepository;
 
-	public static void main(String[] args) {
-		SpringApplication.run(WebApiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WebapiApplication.class, args);
+    }
 
     @Override
     public void run(String... args) throws Exception {
