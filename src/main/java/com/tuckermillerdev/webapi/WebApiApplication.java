@@ -1,8 +1,8 @@
 package com.tuckermillerdev.webapi;
 
-import com.tuckermillerdev.webapi.archive.Archive;
-import com.tuckermillerdev.webapi.archive.ArchiveRepository;
-import com.tuckermillerdev.webapi.player.PlayerRepositoy;
+//import com.tuckermillerdev.webapi.archive.Archive;
+//import com.tuckermillerdev.webapi.archive.ArchiveRepository;
+//import com.tuckermillerdev.webapi.player.PlayerRepositoy;
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
 import org.apache.tomcat.util.descriptor.web.SecurityCollection;
@@ -22,11 +22,11 @@ import java.util.List;
 @SpringBootApplication
 public class WebapiApplication implements CommandLineRunner {
 
-    @Autowired
-    PlayerRepositoy playerRepositoy;
+    //@Autowired
+    //PlayerRepositoy playerRepositoy;
 
-    @Autowired
-    ArchiveRepository archiveRepository;
+    //@Autowired
+    //ArchiveRepository archiveRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(WebapiApplication.class, args);
