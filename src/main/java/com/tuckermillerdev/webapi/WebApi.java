@@ -3,24 +3,14 @@ package com.tuckermillerdev.webapi;
 //import com.tuckermillerdev.webapi.archive.Archive;
 //import com.tuckermillerdev.webapi.archive.ArchiveRepository;
 //import com.tuckermillerdev.webapi.player.PlayerRepositoy;
-import org.apache.catalina.Context;
-import org.apache.catalina.connector.Connector;
-import org.apache.tomcat.util.descriptor.web.SecurityCollection;
-import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
 
 @SpringBootApplication
-public class WebapiApplication implements CommandLineRunner {
+public class WebApi implements CommandLineRunner {
 
     //@Autowired
     //PlayerRepositoy playerRepositoy;
@@ -29,7 +19,7 @@ public class WebapiApplication implements CommandLineRunner {
     //ArchiveRepository archiveRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(WebapiApplication.class, args);
+        SpringApplication.run(WebApi.class, args);
     }
 
     @Override
