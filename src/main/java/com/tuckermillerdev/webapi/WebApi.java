@@ -3,6 +3,9 @@ package com.tuckermillerdev.webapi;
 //import com.tuckermillerdev.webapi.archive.Archive;
 //import com.tuckermillerdev.webapi.archive.ArchiveRepository;
 //import com.tuckermillerdev.webapi.player.PlayerRepositoy;
+import com.tuckermillerdev.webapi.archive.ArchiveRepository;
+import com.tuckermillerdev.webapi.player.PlayerRepositoy;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,11 +15,11 @@ import java.text.SimpleDateFormat;
 @SpringBootApplication
 public class WebApi implements CommandLineRunner {
 
-    //@Autowired
-    //PlayerRepositoy playerRepositoy;
+    @Autowired
+    PlayerRepositoy playerRepositoy;
 
-    //@Autowired
-    //ArchiveRepository archiveRepository;
+    @Autowired
+    ArchiveRepository archiveRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(WebApi.class, args);
