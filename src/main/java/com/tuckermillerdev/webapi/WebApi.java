@@ -27,7 +27,7 @@ public class WebApi implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MM-yyyy");
+        // SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MM-yyyy");
 //        Game game = new Game("1", "Lakin Lane", 120, sdf1.parse("12-12-2017"));
 //        List<Game> games = null;
 //        games.add(game);
