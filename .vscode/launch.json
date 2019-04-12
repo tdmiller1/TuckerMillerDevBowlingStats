@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WebApi<WebApi>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.tuckermillerdev.webapi.WebApi",
+            "projectName": "WebApi",
+            "args": ""
+        }
+    ]
+}
