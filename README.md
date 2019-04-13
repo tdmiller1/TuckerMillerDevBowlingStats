@@ -2,319 +2,153 @@
 ## Java Springboot Application
 ## Utilizing a Cloud Hosted database through Mongodb mLab
 
-### GET Players via /players
+Please visit http://api.TuckerMillerDev.com/ For full documentation
 
-Example Response to www.webApi.TuckerMillerDev.com/histories
+### GET ~ All Players
+api.TuckerMillerDev.com/players
 
-Example Response to www.webApi.TuckerMillerDev.com/players
-```
-[{
-  "id":"1",
+    [{
+      "username":"tdmiller",
+      "password":"1234",
+      "playerName":"Tucker Miller",
+      "average":120,
+      "max":165
+    }]
+    
+### GET ~ Single Player
+api.TuckerMillerDev.com/players/{username}
 
-  "playerName":"Lakin Lane",
+    {
+      "username":"tdmiller",
+      "password":"1234",
+      "playerName":"Tucker Miller",
+      "average":120,
+      "max":165
+    }
+    
+    
+### PUT ~ Update Player
+api.TuckerMillerDev.com/players/{username}
 
-  "average": 120,
+    {
+      "username":"tdmiller",
+      "password":"1234",
+      "playerName":"Tucker Miller",
+      "average":120,
+      "max":165
+    }
+    
+    
+### POST ~ All Players
+api.TuckerMillerDev.com/players/Password
 
-  "max": 165
+    {
+      "username":"tdmiller",
+      "password":"1234",
+      "playerName":"Tucker Miller",
+      "average":120,
+      "max":165
+    }
+    
+    
+### Delete ~ Player
+api.TuckerMillerDev.com/players/Password/{username}
 
-},
-{
-
-  "id":"2",
-
-  "playerName":"Tucker Miller",
-
-  "average": 132,
-
-  "max": 226
-
-}]
-
-
-### GET Specific Player by ID via /player/{id}
-
-Example Response to www.webApi.TuckerMillerDev.com/history/3
-
-```
-
-### GET Specific Player by ID via /player/{id}
-
-Example Response to www.webApi.TuckerMillerDev.com/player/3
-```
-{
-
-  "id":"3",
-
-  "playerName":"Mitch Lewis",
-
-  "average": 88,
-
-  "max": 120
-
-}
-
-```
-
-### POST Create a Player via /player/{password}
-
-Response Body
-
-```
-{
-
-  "id": "9999",
-
-  "playerName": "Default Name",
-
-  "average": 99,
-
-  "max": 123
-
-}
-
-### PUT Update Player by ID via /players/{id}
-
-```
-### PUT Update Player by ID via /player
-```
-{
-
-  "id": "3",
-
-  "playerName": "Updated Name",
-
-  "average": 300,
-
-  "max": 300
-
-}
-
-### DELETE Delete Player by ID via /player/{id}
-
-No Response Body
-
-#
-
-### GET History via /history
-
-Example Response to www.webApi.TuckerMillerDev.com/histories
-
-[{
-  "id":"1",
-
-  "playerName":"Lakin Lane",
-
-  "average": 120,
-
-  "max": 165
-
-},
-{
-
-  "id":"2",
-
-  "playerName":"Tucker Miller",
-
-  "average": 132,
-
-  "max": 226
-
-}]
+[No Response]
 
 
-### GET Specific Player by ID via /player/{id}
+### GET ~ All Records
+api.TuckerMillerDev.com/record
 
-Example Response to www.webApi.TuckerMillerDev.com/history/3
+    [{
+    "username": "tdmiller",
+    "games": [
+        {
+            "id":"1",
+            "score":120,
+            "date":"2019-04-12T00:00:00.000+0000"
+        },
+        {
+            "id":"2",
+            "score":120,
+            "date":"2019-04-12T00:00:00.000+0000"
+        }
+      ]
+    },
+    {
+        "username": "newPerson",
+        "games": [
+        {
+            "id":"1",
+            "score":120,
+            "date":"2019-04-12T00:00:00.000+0000"
+        },
+        {
+            "id":"2",
+            "score":120,
+            "date":"2019-04-12T00:00:00.000+0000"
+        }
+      ]
+    }
+        
+### GET ~ All one player record
+api.TuckerMillerDev.com/record/{username}
 
 {
-
-  "id":"3",
-
-  "playerName":"Mitch Lewis",
-
-  "average": 88,
-
-  "max": 120
-
-}
-
-
-### POST Create a Player via /player/{password}
-
-Response Body
-
-{
-
-  "id": "9999",
-
-  "playerName": "Default Name",
-
-  "average": 99,
-
-  "max": 123
-
-}
-
-### PUT Update Player by ID via /players/{id}
-
-{
-
-  "id": "3",
-
-  "playerName": "Updated Name",
-
-  "average": 300,
-
-  "max": 300
-
-}
-
-### DELETE Delete Player by ID via /player/{id}
-
-No Response Body
-```
-### DELETE Player by ID via /player/{id}
-
-```No Response Body```
-
-#
-
-### GET all Archives via /archives
-
-Example Response to www.webApi.TuckerMillerDev.com/archives
-
-```
-[{
-   "id": "3",
-      "playerName": "Mitch Lewis",
-      "games":
+    "username": "newPerson",
+    "games": [
       {
-         "id": "1",
-         "playerName": "Mitch Lewis",
-         "score": 102,
-         "date": "2017-10-20T04:00:00.000+0000"
+          "id":"1",
+          "score":120,
+          "date":"2019-04-12T00:00:00.000+0000"
       },
       {
-         "id": "2",
-         "playerName": "Mitch Lewis",
-         "score": 106,
-         "date": "2017-10-20T04:00:00.000+0000"
+          "id":"2",
+          "score":120,
+          "date":"2019-04-12T00:00:00.000+0000"
       }
-   ]
-},
+    ]
+}
+
+### PUT ~ Update one record
+api.TuckerMillerDev.com/record/{username}
+
 {
-   "id": "1",
-   "playerName": "Lakin Lane",
-   "games": [
+    "username": "newPerson",
+    "games": [
       {
-         "id": "1",
-         "playerName": "Lakin Lane",
-         "score": 145,
-         "date": "2017-10-20T04:00:00.000+0000"
+          "id":"1",
+          "score":120,
+          "date":"2019-04-12T00:00:00.000+0000"
       },
       {
-         "id": "2",
-         "playerName": "Lakin Lane",
-         "score": 120,
-         "date": "2017-10-20T04:00:00.000+0000"
+          "id":"2",
+          "score":120,
+          "date":"2019-04-12T00:00:00.000+0000"
       }
-   ]
-}]
+    ]
+}
 
-```
+### POST ~ Create one reocord
+api.TuckerMillerDev.com/record/Password
 
-### GET Specific Player Archive by ID via /player/{id}/archive
-
-Example Response to www.webApi.TuckerMillerDev.com/player/1/archive
-```
-[{
-   "id": "1",
-   "playerName": "Lakin Lane",
-   "games": [
+{
+    "username": "newPerson",
+    "games": [
       {
-         "id": "1",
-         "playerName": "Lakin Lane",
-         "score": 145,
-         "date": "2017-10-20T04:00:00.000+0000"
+          "id":"1",
+          "score":120,
+          "date":"2019-04-12T00:00:00.000+0000"
       },
       {
-         "id": "2",
-         "playerName": "Lakin Lane",
-         "score": 120,
-         "date": "2017-10-20T04:00:00.000+0000"
+          "id":"2",
+          "score":120,
+          "date":"2019-04-12T00:00:00.000+0000"
       }
-   ]
-}]
-```
+    ]
+}
 
-### POST Create a Archive via /archive
+### Delete ~ Record
+api.TuckerMillerDev.com/players/Password/{username}
 
-Response Body
-```
-[{
-   "id": "1",
-   "playerName": "Lakin Lane",
-   "games": [
-      {
-         "id": "1",
-         "playerName": "Lakin Lane",
-         "score": 145,
-         "date": "2017-10-20T04:00:00.000+0000"
-      },
-      {
-         "id": "2",
-         "playerName": "Lakin Lane",
-         "score": 120,
-         "date": "2017-10-20T04:00:00.000+0000"
-      }
-   ]
-}]
-```
-### POST Player Game by ID via /player/{id}/game
-
-Response Body
-```
-[{
-     "id": "1",
-     "playerName": "Lakin Lane",
-     "score": 145,
-     "date": "2017-10-20T04:00:00.000+0000"
-}]
-```
-### PUT Update Player Archive by ID via /player/{id}/archive
-
-Response Body
-```
-[{
-   "id": "1",
-   "playerName": "Lakin Lane",
-   "games": [
-      {
-         "id": "1",
-         "playerName": "Lakin Lane",
-         "score": 145,
-         "date": "2017-10-20T04:00:00.000+0000"
-      } ]
-}]
-```
-
-### POST Add a game to Player Archive via /player/{id}/archive
-
-Response Body
-```
-[{
-   "id": "42",
-   "playerName": "Lakin Lane",
-   "score": 150,
-   "date": 2018-02-21T00:00:00.000+0000"
-}]
-```
-### DELETE Player Archive by ID via /player/{id}/archive
-
-```No Response Body```
-
-This updates the players average and max score if necessary
-
-####Headers set to
-
-Key: Content-type Value: application/json
+[No Response]
