@@ -68,146 +68,112 @@
             <h3>GET ~ All Players</h3>
             <h5>webApi.TuckerMillerDev.com/players</h5>
             <div class="response-body">
-                [{"id":"1",<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "playerName":"Lakin Lane",<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "average":120,"max":165
-                <br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;
-                {"id":"2",<br>&nbsp;&nbsp;
-                "playerName":"Tucker Miller",<br>&nbsp;&nbsp;
-                "average":132,"max":226
-                <br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;
-                {"id":"3",<br>&nbsp;&nbsp;
-                "playerName":"Mitch Lewis",<br>&nbsp;&nbsp;
-                "average":88,"max":120
-                <br>&nbsp;&nbsp;}]
-                [{"id":"1","playerName":"Lakin Lane","average":120,"max":165},
-                {"id":"2","playerName":"Tucker Miller","average":132,"max":226},
-                {"id":"3","playerName":"Mitch Lewis","average":88,"max":120}]
+                [{<br>&nbsp;&nbsp;&nbsp;&nbsp;"username":"tdmiller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "password":"1234",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "playerName":"Tucker Miller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "average":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "max":165<br>&nbsp;&nbsp;}]
             </div>
         </div>
         <div>
-            <h3>GET ~ Single Player by ID</h3>
-            <h5>webApi.TuckerMillerDev.com/player/1</h5>
+            <h3>GET ~ Single Player by Username</h3>
+            <h5>webApi.TuckerMillerDev.com/players/{username}</h5>
             <div class="response-body">
-                [{<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "id":"1",<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "playerName":"Lakin Lane",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                {<br>&nbsp;&nbsp;&nbsp;&nbsp;"username":"tdmiller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "password":"1234",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "playerName":"Tucker Miller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
                 "average":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "max":165<br>&nbsp;&nbsp;&nbsp;&nbsp;}]
-                [{"id":"1","playerName":"Lakin Lane","average":120,"max":165}]
+                "max":165<br>&nbsp;&nbsp;}
             </div>
         </div>
         <div>
-            <h3>PUT ~ Update Player by ID</h3>
-            <h5>webApi.TuckerMillerDev.com/player/1</h5>
+            <h3>PUT ~ Update Player by Username</h3>
+            <h5>webApi.TuckerMillerDev.com/player/{username}</h5>
             <div class="response-body">
-                [{<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "id":"100",<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "playerName":"Lakin Lane",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                {<br>&nbsp;&nbsp;&nbsp;&nbsp;"username":"tdmiller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "password":"1234",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "playerName":"Tucker Miller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
                 "average":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "max":165<br>
-                }]
+                "max":165<br>&nbsp;&nbsp;}
             </div>
         </div>
         <div>
             <h3>POST ~ Create Player</h3>
             <h5>webApi.TuckerMillerDev.com/player</h5>
             <div class="response-body">
-                [{<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "id":"1",<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "playerName":"Lakin Lane",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                {<br>&nbsp;&nbsp;&nbsp;&nbsp;"username":"tdmiller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "password":"1234",<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                "playerName":"Tucker Miller",<br>&nbsp;&nbsp;&nbsp;&nbsp;
                 "average":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;
-                "max":165<br>
-                }]
+                "max":165<br>&nbsp;&nbsp;}
             </div>
         </div>
         <div>
-            <h3>DELETE ~ Delete Player by ID</h3>
-            <h5>webApi.TuckerMillerDev.com/player/1</h5>
+            <h3>DELETE ~ Delete Player by Username</h3>
+            <h5>webApi.TuckerMillerDev.com/player/{username}</h5>
             <div class="response-body">
                 [No Response]
             </div>
         </div>
     </div>
-</div>
-
-<div class="w3-card-4">
-    <div class="w3-container w3-theme w3-card" id="header">
-        <h1>History api</h1>
-    </div>
     <div class="w3-theme-l5" id="content">
+        <h2 style="text-align: center">Record Calls</h2>
         <div>
-            <h3>GET ~ All History</h3>
-            <h4>webApi.TuckerMillerDev.com/histories</h4>
+            <h3>GET ~ All Records</h3>
+            <h4>webApi.TuckerMillerDev.com/record</h4>
             <div class="response-body">
                 [{<br> &nbsp;&nbsp;
-                "id": "3",<br> &nbsp;&nbsp;
-                "playerName": "Mitch Lewis",<br> &nbsp;&nbsp;
+                "username": "tdmiller",<br> &nbsp;&nbsp;
                 "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                { <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Mitch Lewis",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 102,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                },<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                {<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "2",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Mitch Lewis",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 106,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                }<br> &nbsp;&nbsp;
-                ]<br>
+                {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    "id":"1",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    "score":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    "date":"2019-04-12T00:00:00.000+0000"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]<br>
+                },<br>
+                {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    "id":"2",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    "score":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    "date":"2019-04-12T00:00:00.000+0000"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]<br>
                 },<br>
                 {<br> &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp;
-                "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                { <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 145,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                },<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                {<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "2",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 120,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                }<br> &nbsp;&nbsp;
-                ]<br>
-                }]
+                    "username": "newPerson",<br> &nbsp;&nbsp;
+                    "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
+                    {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "id":"1",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "score":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "date":"2019-04-12T00:00:00.000+0000"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]<br>
+                    },<br>
+                    {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "id":"2",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "score":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "date":"2019-04-12T00:00:00.000+0000"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]<br>
+                    }]
             </div>
         </div>
         <div>
-            <h3>GET ~ Single Hstory by Player ID</h3>
-            <h4>webApi.TuckerMillerDev.com/player/{id}/history</h4>
-            <div class="response-body">
-                [{<br> &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp;
-                "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                { <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 145,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                },<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                {<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "2",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 120,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                }<br> &nbsp;&nbsp;
-                ]<br>
-                }]
-            </div>
-        </div>
-        <div>
-            <h3>PUT ~ Update History by Player ID</h3>
-            <h5>webApi.TuckerMillerDev.com/player/{id}/history</h5>
+            <h3>GET ~ Single Hstory by Player Username</h3>
+            <h4>webApi.TuckerMillerDev.com/record/{username}</h4>
             <div class="response-body">
                 {<br> &nbsp;&nbsp;
-                [{<br> &nbsp;&nbsp;
+                    "username": "tdmiller",<br> &nbsp;&nbsp;
+                    "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
+                    {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "id":"1",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "score":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "date":"2019-04-12T00:00:00.000+0000"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]<br>
+                    },<br>
+                    {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "id":"2",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "score":120,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        "date":"2019-04-12T00:00:00.000+0000"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]<br>
+                    }
+            </div>
+        </div>
+        <div>
+            <h3>PUT ~ Update History by Player Username</h3>
+            <h5>webApi.TuckerMillerDev.com/record/{username}</h5>
+            <div class="response-body">
+                {<br> &nbsp;&nbsp;
                 "id": "1",<br> &nbsp;&nbsp;
                 "playerName": "Lakin Lane",<br> &nbsp;&nbsp;
                 "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
@@ -216,9 +182,8 @@
                 "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
                 "score": 145,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
                 "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                }
-                ]<br>
-                }]
+                }]<br>
+            }
             </div>
         </div>
         <div>
@@ -226,24 +191,16 @@
             <h5>webApi.TuckerMillerDev.com/history</h5>
             <div class="response-body">
                 {<br> &nbsp;&nbsp;
-                [{<br> &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp;
-                "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                { <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "1",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 145,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                },<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                {<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "id": "2",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "score": 120,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
-                }<br> &nbsp;&nbsp;
-                ]<br>
-                }]
+                    "id": "1",<br> &nbsp;&nbsp;
+                    "playerName": "Lakin Lane",<br> &nbsp;&nbsp;
+                    "games": [<br> &nbsp;&nbsp; &nbsp;&nbsp;
+                    { <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    "id": "1",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    "playerName": "Lakin Lane",<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    "score": 145,<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    "date": "2017-10-20T04:00:00.000+0000"<br> &nbsp;&nbsp; &nbsp;&nbsp;
+                    }]<br>
+                }
             </div>
         </div>
         <div>
